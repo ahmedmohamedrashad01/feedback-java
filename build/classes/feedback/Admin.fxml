@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane prefHeight="437.0" prefWidth="1027.0" style="-fx-background-color: #1F2A33;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="feedback.AdminController">
+   <children>
+      <TableView fx:id="table" prefHeight="334.0" prefWidth="1027.0" style="-fx-background-color: #ffffff22; -fx-border-color: #ffffff;" StackPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="colID" editable="false" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="colName" editable="false" prefWidth="177.99999237060547" text="Name" />
+            <TableColumn fx:id="colMobile" editable="false" minWidth="0.0" prefWidth="160.0" text="Mobile Number" />
+            <TableColumn fx:id="colProblem" editable="false" prefWidth="334.6666564941406" text="Problem" />
+            <TableColumn fx:id="colDate" editable="false" prefWidth="277.33333333333326" text="Date" />
+        </columns>
+         <StackPane.margin>
+            <Insets bottom="80.0" top="30.0" />
+         </StackPane.margin>
+      </TableView>
+      <JFXButton fx:id="btnBack" alignment="CENTER" maxHeight="44.0" maxWidth="168.0" onAction="#btnBackAction" prefHeight="44.0" prefWidth="168.0" style="-fx-background-color: #2C66AA;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Arial Narrow Bold" size="22.0" />
+         </font>
+         <StackPane.margin>
+            <Insets top="350.0" />
+         </StackPane.margin>
+      </JFXButton>
+   </children>
+</StackPane>

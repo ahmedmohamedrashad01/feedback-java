@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Feedback.jnlp">
+    <information>
+        <title>Feedback</title>
+        <vendor>Rashad</vendor>
+        <description>null</description>
+        <offline-allowed/>
+    </information>
+    <update check="always"/>
+    <resources>
+        <j2se version="10.0.1+" href="http://java.sun.com/products/autodl/j2se"/>
+        <jar href="Feedback.jar" size="78189" download="eager"/>
+        <jar href="lib\fontawesomefx-8.1.jar" size="179086" download="eager"/>
+        <jar href="lib\jfoenix.jar" size="2201031" download="eager"/>
+        <jar href="lib\mysql-connector-java-5.1.48.jar" size="1006956" download="eager"/>
+    </resources>
+    <jfx:javafx-desc width="800" height="600" main-class="feedback.Feedback" name="Feedback"/>
+</jnlp>
+

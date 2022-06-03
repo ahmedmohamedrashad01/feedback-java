@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="1027.0" style="-fx-background-color: #212C35;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="feedback.Main_PageController">
+   <center>
+      <HBox alignment="CENTER" prefHeight="367.0" prefWidth="1027.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="imgAngry" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#imgAngryAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@4.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgSad" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#imgSadAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@3.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgNormal" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#imgNormalAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgGood" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#imgGoodAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgVeryGood" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#imgVeryGoodAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@5.png" />
+               </image>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets bottom="100.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets top="90.0" />
+         </BorderPane.margin>
+      </HBox>
+   </center>
+   <top>
+      <Label text="Customer Feedback" textFill="WHITE" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Bell MT Bold" size="47.0" />
+         </font>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </Label>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="btnSend" onAction="#btnSendAction" prefHeight="50.0" prefWidth="177.0" style="-fx-background-color: #2C66AA; -fx-background-radius: 50;" text="Save" textFill="WHITE">
+               <font>
+                  <Font name="Akhbar MT Bold" size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="btnAdmin" onAction="#btnAdminAction" prefHeight="50.0" prefWidth="177.0" style="-fx-background-color: #2C66AA; -fx-background-radius: 50;" text="Admin" textFill="WHITE">
+               <font>
+                  <Font name="Akhbar MT Bold" size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+</BorderPane>
